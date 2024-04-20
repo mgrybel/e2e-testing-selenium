@@ -5,6 +5,7 @@ import static com.ecommerce.selenium.utilities.PropKey.URL;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import com.ecommerce.selenium.driver.DriverManager;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.DisplayNameGeneration;
 import org.junit.jupiter.api.DisplayNameGenerator;
@@ -12,7 +13,7 @@ import org.junit.jupiter.api.Test;
 
 @DisplayName("E-commerce Website Tests")
 @DisplayNameGeneration(DisplayNameGenerator.Standard.class)
-public class MyFirstTest extends TestBase {
+public class MyFirstTest extends DriverManager {
     @Test
     @DisplayName("My first test")
     void test() {
