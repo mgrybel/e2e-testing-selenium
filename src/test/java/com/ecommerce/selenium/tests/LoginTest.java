@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 @DisplayName("Login Tests")
 public class LoginTest extends EcommerceWebsiteSteps {
     @Test
-    @DisplayName("As a valid customer, the customer must be able to log in with valid credentials")
+    @DisplayName("Log in to the app with valid customer credentials")
     @Description("Log in to the app as a customer")
     void doLogin() {
         navigateToApp();
