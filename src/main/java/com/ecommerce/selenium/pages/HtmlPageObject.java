@@ -91,7 +91,18 @@ public class HtmlPageObject extends DriverManager {
     }
 
     /**
-     * Enter text into a textbox
+     * Enter text into a text box
+     * @param by
+     * @param text
+     */
+    public void enterTextIntoTextBox(By by, String text) {
+        WebElement textBox = findElementBy(by);
+        textBox.clear();
+        textBox.sendKeys(text);
+    }
+
+    /**
+     * Enter text into a text box
      * @param element
      * @param text
      */
