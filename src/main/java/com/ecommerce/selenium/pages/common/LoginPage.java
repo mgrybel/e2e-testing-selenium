@@ -21,6 +21,7 @@ public class LoginPage extends BasePage {
     private static final String EMAIL_INPUT_ID = "email";
     private static final String PASSWORD_INPUT_ID = "password";
     private static final String LOGIN_BUTTON_XPATH = "//button[text()='Login']";
+    private static final String LOGIN_HEADING_XPATH = "//h1[text() = 'Login']";
     private static final String REGISTER_LINK_XPATH = "//a[contains(@href,'/register')]";
     private static final String NO_LOGIN_DATA_MESSAGE_XPATH =
             "//p[contains(@class, 'text-danger text-center') and text() = 'Email and Password are required']";
@@ -80,5 +81,13 @@ public class LoginPage extends BasePage {
      */
     public String getInvalidLoginMessage() {
         return getTextFromElement(By.xpath(INVALID_LOGIN_DATA_MESSAGE_XPATH));
+    }
+
+    /**
+     * Check if the Login heading is visible
+     */
+    public boolean isLoginHeadingVisible() {
+        findElementBy(By.xpath(LOGIN_HEADING_XPATH));
+        return true;
     }
 }
