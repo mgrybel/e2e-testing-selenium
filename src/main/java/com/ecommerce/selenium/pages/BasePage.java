@@ -6,7 +6,6 @@ import com.ecommerce.selenium.pages.common.HomePage;
 import com.ecommerce.selenium.pages.common.LoginPage;
 import com.ecommerce.selenium.pages.common.ProductsPage;
 import com.ecommerce.selenium.pages.common.ProfilePage;
-import com.ecommerce.selenium.pages.customer.CustomerHomePage;
 import com.ecommerce.selenium.pages.customer.OrdersPage;
 import com.ecommerce.selenium.pages.customer.RegisterPage;
 import org.openqa.selenium.By;
@@ -17,8 +16,6 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-
-
 
 public class BasePage extends HtmlPageObject {
     private WebDriver driver;
