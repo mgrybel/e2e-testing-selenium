@@ -92,7 +92,7 @@ public class BasePage extends HtmlPageObject {
     }
 
     /**
-     * Find the Account button
+     * Check if the Account button is visible
      */
     public boolean isAccountButtonVisible() {
         findElementBy(By.xpath(ACCOUNT_BUTTON_XPATH));
