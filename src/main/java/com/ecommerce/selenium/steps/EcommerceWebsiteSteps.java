@@ -94,6 +94,11 @@ public class EcommerceWebsiteSteps extends DriverManager {
         return loginPage.navigateToRegisterPage();
     }
 
+    @Step("Check if the Login heading is visible")
+    public boolean isLoginHeadingVisible() {
+        return loginPage.isLoginHeadingVisible();
+    }
+
     @Step("Get the error message about no login data provided")
     public String getNoLoginDataProvidedMessage() {
         return loginPage.getNoLoginDataProvidedMessage();
@@ -110,4 +115,9 @@ public class EcommerceWebsiteSteps extends DriverManager {
      * REGISTER PAGE STEPS
      ================================================================
      */
+
+    @Step("Create a new customer account with name: {0}, email {1}, and password: {2}")
+    public LoginPage createCustomerAccount(String name, String email, String password, String confirmPassword) {
+        return registerPage.createCustomerAccount(name, email, password, confirmPassword);
+    }
 }
