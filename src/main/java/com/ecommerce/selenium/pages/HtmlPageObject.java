@@ -3,6 +3,8 @@ package com.ecommerce.selenium.pages;
 import static com.ecommerce.selenium.utilities.TimeUtilities.getExplicitWait;
 
 import com.ecommerce.selenium.driver.DriverManager;
+import com.ecommerce.selenium.utilities.Helper;
+import com.ecommerce.selenium.utilities.LogHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
@@ -99,6 +101,8 @@ public class HtmlPageObject extends DriverManager {
         WebElement textBox = findElementBy(by);
         textBox.clear();
         textBox.sendKeys(text);
+
+        Helper.takeElementScreenshot(textBox, "textBox");
     }
 
     /**
@@ -109,6 +113,9 @@ public class HtmlPageObject extends DriverManager {
     public void enterTextIntoTextBox(WebElement element, String text) {
         element.clear();
         element.sendKeys(text);
+
+        Helper.takeElementScreenshot(element, "textBox");
+        LogHelper.logToReport("Typing text: " + text + " inside text box with locator: " + element.toString());
     }
 
     /**
