@@ -7,7 +7,14 @@ public enum PropKey {
 
     // Timeouts
     IMPLICIT_WAIT("implicitWait"),
-    EXPLICIT_WAIT("explicitWait");
+    EXPLICIT_WAIT("explicitWait"),
+
+    // Screenshots
+    SCREENSHOT("screenshot"),
+    ELEMENT_SCREENSHOT("elementScreenshot"),
+
+    // Allure
+    ALLURE_REPORT_STEP_LOG("allureReportStepLog");
 
     private String propVal;
 
