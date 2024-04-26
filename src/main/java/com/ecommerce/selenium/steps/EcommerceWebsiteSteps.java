@@ -10,6 +10,7 @@ import com.ecommerce.selenium.pages.common.ProfilePage;
 import com.ecommerce.selenium.pages.customer.CustomerHomePage;
 import com.ecommerce.selenium.pages.customer.OrdersPage;
 import com.ecommerce.selenium.pages.customer.RegisterPage;
+import com.ecommerce.selenium.utilities.Helper;
 import io.qameta.allure.Step;
 
 public class EcommerceWebsiteSteps extends DriverManager {
