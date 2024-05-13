@@ -21,7 +21,7 @@ public class LoginTest extends EcommerceWebsiteSteps {
     void doLogin() {
         navigateToApp();
         navigateToLoginPage();
-        customerLogin("bochenek@test.com", "pass1234!A");
+        customerLogin("customer@test.com", "pass1234!A");
 
         assertTrue(isAccountButtonVisible());
     }
