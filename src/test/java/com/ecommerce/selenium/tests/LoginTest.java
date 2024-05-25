@@ -21,7 +21,7 @@ public class LoginTest extends EcommerceWebsiteSteps {
     void doLogin() {
         navigateToApp();
         navigateToLoginPage();
-        customerLogin("customer@test.com", "pass1234!A");
+        customerLogin("customer@test.com", "test123");
 
         assertTrue(isAccountButtonVisible());
     }
@@ -31,7 +31,7 @@ public class LoginTest extends EcommerceWebsiteSteps {
     void invalidLogin() {
         navigateToApp();
         navigateToLoginPage();
-        customerLogin("test@test.com", "test");
+        customerLogin("test@test.com", "test123");
 
         assertEquals("Invalid email or password", getInvalidLoginMessage());
     }
