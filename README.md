@@ -1,6 +1,6 @@
-# UI Testing using Selenium WebDriver
+# E2E Testing using Selenium WebDriver
 
-Automated UI tests of an e-commerce application built using **Selenium WebDriver** with **Java**.
+Automated end-to-end tests of an e-commerce application built using **Selenium WebDriver** with **Java**.
 
 ## Table of Contents
 
